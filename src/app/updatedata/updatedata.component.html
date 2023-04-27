@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="form-box" >
+    <h3> Update Student Data</h3>
+       <form #updateform="ngForm" (ngSubmit)="updatestuddata(updateform)">
+
+          <label for="studid"> Stud ID : </label>
+          <input type="number" id="studid" #studid (ngModel)="studid" name="studid"> 
+          <br><br> 
+
+           <label for="studname">Student Name : </label>
+           <input type="text" id="studname"  #studname (ngModel)="studname" name="studname">
+           <br> <br>
+   
+           <label for="studage"> Student Age : </label>
+           <input type="number" id="studage"  #studage (ngModel)="studage" name="studage">
+           <br><br>
+   
+           <input type="submit" value="Update">
+   
+       </form>
+   <div>
+
+

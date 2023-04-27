@@ -1,0 +1,16 @@
+<div align="center" style="padding-top: 10%;">
+    <h3> Delete Student Data</h3>
+       <form #deleteform="ngForm" (ngSubmit)="deletedata(deleteform)">
+
+           <label for="deleteid"> Cust ID : </label>
+           <input type="number" id="deleteid" #studid (ngModel)="studid" name="studid">
+           <br> <br>
+
+
+
+           <input type="submit" value="Delete" style="color: red;">
+
+       </form>
+   <div>
+
+
